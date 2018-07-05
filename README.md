@@ -11,6 +11,9 @@ Project flow is handled in [My-Game Trello Board](https://trello.com/b/I9Skz3EQ/
 
 ## Learning
 
+### Question
++ test framework: I go with [Mocha](https://mochajs.org/) for now. 
+Alternative [Jest](https://jestjs.io) 
 
 ### Achivements
 + NVM works on my machine, default set to 8.11.3  
