@@ -8,12 +8,11 @@ function startGame() {
 
     out.welcome();
     out.startGameDescription();
-    
-    
+
     rl.on('line', function (line) {
-        
+
     })
-    
+
     return {name: "test"}
 }
 

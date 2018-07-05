@@ -1,0 +1,19 @@
+{
+  "name": "my-game",
+  "version": "0.0.0-SNAPSHOT",
+  "description": "Just a little cute game",
+  "license": "MIT",
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.0"
+  }
+}
