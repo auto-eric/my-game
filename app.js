@@ -1,20 +1,32 @@
 #!/usr/bin/env node
 
+const out = require('./out')
 
-const action = require('./action')
+const readline = require('readline');
+const States = require('./states');
 
-action.runGame(action.startGame());
+function runGame() {
 
-/*
+    const rl = readline.createInterface(process.stdin, process.stdout);
+    rl.setPrompt('action> ');
 
-rl.prompt();
+    out.welcome();
+    out.startGameDescription();
 
-rl.on('line', function (line) {
-    if (line === "exit") {
-        rl.close();
-    }
+    var currentState = States.START;
     rl.prompt();
-}).on('close', function () {
-    process.exit(0);
-});
-*/
+
+    rl.on('line', function (line) {
+        currentState = currentState.run(line);
+        if (currentState === States.EXIT) {
+            rl.close();
+        } else {
+            rl.prompt();
+        }
+    }).on('close', function () {
+        process.exit(0);
+    });
+}
+
+
+runGame();
