@@ -1,4 +1,4 @@
-var State = require("../states");
+var State = require("../status");
 var assert = require('assert');
 
 describe("start game", function(){
